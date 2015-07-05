@@ -1,0 +1,25 @@
+{
+  "modid": "Mekanism",
+  "segments": [
+    {
+      "class": "mekanism.common.item.ItemAtomicDisassembler",
+      "type": "item",
+      "itemType": "LEFT_CLICK_BLOCK",
+      "onAdjacent": false,
+      "flag": "MODIFY"
+    },
+    {
+      "class": "mekanism.common.block.BlockMachine",
+      "type": "block",
+      "itemType": "RIGHT_CLICK",
+      "owner": [
+        {
+          "element": "owner",
+          "type": "FIELD"
+        }
+      ],
+      "flag": "MODIFY",
+      "range": 32
+    }
+  ]
+}
