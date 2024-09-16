@@ -4,25 +4,21 @@
     {
       "class": "ic2.core.block.EntityIC2Explosive",
       "type": "entity",
-      "entityType": "TRACKED",
-      "flag": "EXPLOSIONS",
+      "actions": "TRACKED",
+      "flags": "EXPLOSIONS",
       "owner": [
         {
           "element": "igniter",
           "type": "FIELD"
-        },
-        {
-          "element": "func_70005_c_",
-          "type": "METHOD"
         }
       ],
       "range": [
         {
-          "element": "value * 1.5",
+          "element": "explosivePower * 1.5",
           "type": "FORMULA"
         }
       ],
-      "value": [
+      "explosivePower": [
         {
           "element": "explosivePower",
           "type": "FIELD"
@@ -32,16 +28,12 @@
     {
       "class": "ic2.core.block.EntityDynamite",
       "type": "entity",
-      "entityType": "TRACKED",
-      "flag": "EXPLOSIONS",
+      "actions": "TRACKED",
+      "flags": "EXPLOSIONS",
       "owner": [
         {
           "element": "owner",
           "type": "FIELD"
-        },
-        {
-          "element": "func_70005_c_",
-          "type": "METHOD"
         }
       ],
       "range": 1
@@ -49,48 +41,71 @@
     {
       "class": "ic2.core.item.tool.EntityMiningLaser",
       "type": "entity",
-      "entityType": "TRACKED",
-      "flag": "EXPLOSIONS",
+      "actions": "TRACKED",
+      "flags": "EXPLOSIONS",
       "owner": [
         {
           "element": "owner",
           "type": "FIELD"
-        },
-        {
-          "element": "func_70005_c_",
-          "type": "METHOD"
         }
       ],
-      "range": 20
+      "range": 32
     },
     {
       "class": "ic2.core.item.tool.ItemToolMiningLaser",
       "type": "item",
-      "itemType": "RIGHT_CLICK_AIR",
-      "onAdjacent": false,
-      "flag": "EXPLOSIONS",
+      "actions": "RIGHT_CLICK_AIR",
+      "isAdjacent": false,
+      "flags": "EXPLOSIONS",
+      "range": 32
+    },
+    {
+      "class": "ic2.core.item.tool.PlasmaLauncher",
+      "type": "item",
+      "actions": "RIGHT_CLICK_AIR",
+      "isAdjacent": false,
+      "flags": "EXPLOSIONS",
       "range": 20
+    },
+    {
+      "class": "ic2.core.item.tool.EntityParticle",
+      "type": "entity",
+      "actions": "TRACKED",
+      "flags": ["MODIFY","EXPLOSIONS"],
+      "owner": [
+        {
+          "element": "getThrower",
+          "type": "METHOD"
+        }
+      ],
+      "range": 64,
+	  "explosivePower": [
+        {
+          "element": "func_70071_h_.maxInfluenceDistance",
+          "type": "FIELD"
+        }
+      ]
     },
     {
       "class": "ic2.core.item.ItemIC2",
       "type": "item",
-      "itemType": "RIGHT_CLICK_BLOCK",
-      "onAdjacent": false,
-      "flag": "MODIFY"
+      "actions": "RIGHT_CLICK_BLOCK",
+      "isAdjacent": false,
+      "flags": "MODIFY"
     },
     {
       "class": "ic2.core.item.tool.ItemElectricTool",
       "type": "item",
-      "itemType": "RIGHT_CLICK_BLOCK",
-      "onAdjacent": false,
-      "flag": "MODIFY"
+      "actions": "RIGHT_CLICK_BLOCK",
+      "isAdjacent": false,
+      "flags": "MODIFY"
     },
     {
       "class": "ic2.core.block.BlockMultiID",
       "type": "block",
-      "blockType": "RIGHT_CLICK",
+      "actions": "RIGHT_CLICK",
       "meta": -1,
-      "flag": "ACCESS"
+      "flags": "ACCESS"
     }
   ]
 }

@@ -2,10 +2,18 @@
   "modid": "rftools",
   "segments": [
     {
-      "class": "mcjty.container.GenericContainerBlock",
+      "class": "mcjty.lib.container.GenericBlock",
       "type": "block",
-      "blockType": "RIGHT_CLICK",
-      "flag": "ACCESS"
+      "actions": [ "RIGHT_CLICK", "LEFT_CLICK" ],
+      "meta": -1,
+      "flags": "ACCESS"
+    },
+    {
+      "class": "mcjty.rftools.items.smartwrench.SmartWrenchItem",
+      "type": "item",
+      "actions": "RIGHT_CLICK_BLOCK",
+      "isAdjacent": false,
+      "flags": "MODIFY"
     }
   ]
 }

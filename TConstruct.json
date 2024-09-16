@@ -4,16 +4,12 @@
     {
       "class": "tconstruct.mechworks.entity.item.ExplosivePrimed",
       "type": "entity",
-      "entityType": "TRACKED",
-      "flag": "EXPLOSIONS",
+      "actions": "TRACKED",
+      "flags": "EXPLOSIONS",
       "owner": [
         {
-          "element": "field_94084_b",
+          "element": "tntPlacedBy",
           "type": "FIELD"
-        },
-        {
-          "element": "func_70005_c_",
-          "type": "METHOD"
         }
       ],
       "range": 7
@@ -21,9 +17,71 @@
     {
       "class": "tconstruct.world.blocks.OreberryBush",
       "type": "block",
-      "blockType": "RIGHT_CLICK",
+      "actions": [ "RIGHT_CLICK", "LEFT_CLICK" ],
       "meta": -1,
-      "flag": "ACCESS"
-    }
+      "flags": "ACCESS"
+    },
+    {
+      "class": "tconstruct.world.entity.BlueSlime",
+      "type": "entity",
+      "actions": "TRACKED",
+      "flags": "MOBS"
+    },
+    {
+      "class": "tconstruct.items.tools.LumberAxe",
+      "type": "item",
+      "actions": "BREAK_BLOCK",
+      "flags": "MODIFY",
+      "clientUpdate": {
+        "coords":[
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1      
+       ]},
+      "onAdjacent": false
+    },
+    {
+      "class": "tconstruct.items.tools.Scythe",
+      "type": "item",
+      "actions": "BREAK_BLOCK",
+      "flags": "MODIFY",
+      "clientUpdate": {
+        "coords":[
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1      
+       ]},
+      "onAdjacent": false
+    },
+    {
+      "class": "tconstruct.items.tools.Scythe",
+      "type": "item",
+      "actions": "BREAK_BLOCK",
+      "flags": "MODIFY",
+      "clientUpdate": {
+        "coords":[
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1      
+       ]},
+      "onAdjacent": false
+    },
+    {
+      "class": "tconstruct.library.weaponry.ProjectileWeapon",
+      "type": "item",
+      "actions": [ "RIGHT_CLICK_BLOCK", "RIGHT_CLICK_AIR" ],
+      "isAdjacent": false,
+      "flags": "USAGE",
+      "range": 32
+	}
   ]
 }

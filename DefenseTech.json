@@ -1,0 +1,57 @@
+{
+  "modid": "DefenseTech",
+  "segments": [
+    {
+      "class": "defense.common.entity.EntityMissile",
+      "type": "entity",
+      "actions": "TRACKED",
+      "flags": "EXPLOSIONS",
+      "owner": [
+        {
+          "element": "getLauncher",
+          "type": "METHOD"
+        }
+      ],
+      "range": 32
+    },
+    {
+      "class": "defense.common.entity.EntityGrenade",
+      "type": "entity",
+      "actions": "TRACKED",
+      "flags": "EXPLOSIONS",
+      "owner": [
+        {
+          "element": "thrower",
+          "type": "FIELD"
+        }
+      ],
+      "range": 16
+    },
+    {
+      "class": "defense.common.entity.EntityBombSheep",
+      "type": "entity",
+      "actions": "TRACKED",
+      "flags": "MODIFY",
+      "owner": [
+        {
+          "element": "owner",
+          "type": "FIELD"
+        }
+      ],
+      "range": 16
+    },
+    {
+      "class": "defense.common.entity.EntityExplosive",
+      "type": "entity",
+      "actions": "TRACKED",
+      "flags": "EXPLOSIONS",
+      "owner": [
+        {
+          "element": "func_70088_a",
+          "type": "FIELD"
+        }
+      ],
+      "range": 8
+    },
+  ]
+}

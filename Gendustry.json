@@ -1,0 +1,33 @@
+{
+  "modid": "gendustry",
+  "segments": [
+    {
+      "class": "net.bdew.gendustry.machines.apiary.BlockApiary$",
+      "type": "block",
+      "actions": "RIGHT_CLICK",
+      "meta": -1,
+      "flags": "ACCESS"
+    },
+    {
+      "class": "net.bdew.gendustry.machines.mproducer.BlockMutagenProducer$",
+      "type": "block",
+      "actions": "RIGHT_CLICK",
+      "meta": -1,
+      "flags": "ACCESS"
+    },
+    {
+      "class": "net.bdew.gendustry.machines.mproducer.BlockMutatron$",
+      "type": "block",
+      "actions": "RIGHT_CLICK",
+      "meta": -1,
+      "flags": "ACCESS"
+    },
+    {
+      "class": "net.bdew.gendustry.machines.imprinter.BlockImprinter$",
+      "type": "block",
+      "actions": "RIGHT_CLICK",
+      "meta": -1,
+      "flags": "ACCESS"
+    }
+  ]
+}

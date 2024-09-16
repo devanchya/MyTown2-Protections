@@ -4,55 +4,65 @@
     {
       "class": "twilightforest.item.ItemTF",
       "type": "item",
-      "itemType": "RIGHT_CLICK_AIR",
-      "onAdjacent": false,
-      "flag": "USAGE",
-      "range": 10
-    },
-    {
-      "class": "twilightforest.item.ItemTF",
-      "type": "item",
-      "itemType": "RIGHT_CLICK_BLOCK",
-      "onAdjacent": false,
-      "flag": "USAGE",
+      "actions": [ "RIGHT_CLICK_AIR", "RIGHT_CLICK_BLOCK" ],
+      "isAdjacent": false,
+      "flags": "USAGE",
       "range": 10
     },
     {
       "class": "twilightforest.block.BlockTFUncraftingTable",
       "type": "block",
-      "blockType": "RIGHT_CLICK",
+      "actions": "RIGHT_CLICK",
       "meta": -1,
-      "flag": "ACCESS"
+      "flags": "ACCESS"
     },
     {
       "class": "twilightforest.entity.boss.EntityTFIceBomb",
       "type": "entity",
-      "entityType": "TRACKED",
-      "flag": "MODIFY",
+      "actions": "TRACKED",
+      "flags": "MODIFY",
       "owner": [
         {
           "element": "func_85052_h",
-          "type": "METHOD"
-        },
-        {
-          "element": "func_70005_c_",
           "type": "METHOD"
         }
       ],
       "range": 5
     },
     {
+      "class": "twilightforest.entity.EntityTFCubeOfAnnihilation",
+      "type": "entity",
+      "actions": "TRACKED",
+      "flags": "MODIFY",
+      "owner": [
+        {
+          "element": "func_70184_a",
+          "type": "METHOD"
+        }
+      ],
+      "range": 8
+    },
+    {
+      "class": "twilightforest.entity.EntityTFChainBlock",
+      "type": "entity",
+      "actions": "TRACKED",
+      "flags": "MODIFY",
+      "owner": [
+        {
+          "element": "attachedTo",
+          "type": "FIELD"
+        }
+      ],
+      "range": 8
+    },
+    {
       "class": "twilightforest.entity.EntityTFMoonwormShot",
       "type": "entity",
-      "entityType": "TRACKED",
-      "flag": "MODIFY",
+      "actions": "TRACKED",
+      "flags": "MODIFY",
       "owner": [
         {
           "element": "func_85052_h",
-          "type": "METHOD"
-        },
-        {
-          "element": "func_70005_c_",
           "type": "METHOD"
         }
       ],
@@ -61,15 +71,11 @@
     {
       "class": "twilightforest.entity.EntityTFTwilightWandBolt",
       "type": "entity",
-      "entityType": "TRACKED",
-      "flag": "EXPLOSIONS",
+      "actions": "TRACKED",
+      "flags": "EXPLOSIONS",
       "owner": [
         {
           "element": "func_85052_h",
-          "type": "METHOD"
-        },
-        {
-          "element": "func_70005_c_",
           "type": "METHOD"
         }
       ],
@@ -78,11 +84,8 @@
     {
       "class": "twilightforest.entity.EntityTFLoyalZombie",
       "type": "entity",
-      "entityType": "TRACKED",
-      "flag": {
-        "name": "MOBS",
-        "denialValue": "passives"
-      }
+      "actions": "TRACKED",
+      "flags": "MOBS"
     }
   ]
 }

@@ -4,26 +4,43 @@
     {
       "class": "com.emoniph.witchery.item.ItemTaglockKit",
       "type": "item",
-      "itemType": "RIGHT_CLICK_ENTITY",
-      "onAdjacent": false,
-      "flag": "PVP"
+      "actions": "RIGHT_CLICK_ENTITY",
+      "isAdjacent": false,
+      "flags": "PVP"
+    },
+    {
+      "class": "com.emoniph.witchery.item.ItemGeneral",
+      "type": "item",
+      "actions": ["RIGHT_CLICK_BLOCK", "RIGHT_CLICK_ENTITY", "RIGHT_CLICK_AIR"],
+      "flags": "MODIFY",
+	  "range": 32
     },
     {
       "class": "com.emoniph.witchery.entity.EntityWitchProjectile",
       "type": "entity",
-      "entityType": "TRACKED",
-      "flag": "MODIFY",
+      "actions": "TRACKED",
+      "flags": "MODIFY",
       "owner": [
         {
           "element": "func_85052_h",
           "type": "METHOD"
-        },
-        {
-          "element": "func_70005_c_",
-          "type": "METHOD"
         }
       ],
       "range": 10
+    },
+    {
+      "class": "com.emoniph.witchery.item.ItemMysticBranch",
+      "type": "item",
+      "actions": "RIGHT_CLICK_BLOCK",
+      "isAdjacent": false,
+      "flags": "MODIFY",
+      "range": 32
+    },
+    {
+      "class": "com.emoniph.witchery.entity.EntityVillageGuard",
+      "type": "entity",
+      "actions": "PROTECT",
+      "flags": "PVE"
     }
   ]
 }

@@ -4,48 +4,28 @@
     {
       "class": "am2.items.SpellBase",
       "type": "item",
-      "itemType": "RIGHT_CLICK_BLOCK",
-      "onAdjacent": false,
-      "flag": "MODIFY",
-      "range": 10
-    },
-    {
-      "class": "am2.items.SpellBase",
-      "type": "item",
-      "itemType": "RIGHT_CLICK_AIR",
-      "onAdjacent": false,
-      "flag": "USAGE",
+      "actions": [ "RIGHT_CLICK_BLOCK", "RIGHT_CLICK_AIR" ],
+      "isAdjacent": false,
+      "flags": [ "MODIFY", "USAGE" ],
       "range": 10
     },
     {
       "class": "am2.items.ItemSpellBook",
       "type": "item",
-      "itemType": "RIGHT_CLICK_BLOCK",
-      "onAdjacent": false,
-      "flag": "MODIFY",
-      "range": 10
-    },
-    {
-      "class": "am2.items.ItemSpellBook",
-      "type": "item",
-      "itemType": "RIGHT_CLICK_AIR",
-      "onAdjacent": false,
-      "flag": "USAGE",
+      "actions": [ "RIGHT_CLICK_BLOCK", "RIGHT_CLICK_AIR" ],
+      "isAdjacent": false,
+      "flags": [ "MODIFY", "USAGE" ],
       "range": 10
     },
     {
       "class": "am2.entities.EntitySpellEffect",
       "type": "entity",
-      "entityType": "TRACKED",
-      "flag": "MODIFY",
+      "actions": "TRACKED",
+      "flags": "MODIFY",
       "owner": [
         {
           "element": "dummycaster",
           "type": "FIELD"
-        },
-        {
-          "element": "func_70005_c_",
-          "type": "METHOD"
         }
       ],
       "range": 15
@@ -53,15 +33,11 @@
     {
       "class": "am2.entities.EntitySpellProjectile",
       "type": "entity",
-      "entityType": "TRACKED",
-      "flag": "MODIFY",
+      "actions": "TRACKED",
+      "flags": "MODIFY",
       "owner": [
         {
           "element": "getShootingEntity",
-          "type": "METHOD"
-        },
-        {
-          "element": "func_70005_c_",
           "type": "METHOD"
         }
       ],
@@ -70,16 +46,12 @@
     {
       "class": "am2.entities.EntityThrownRock",
       "type": "entity",
-      "entityType": "TRACKED",
-      "flag": "MODIFY",
+      "actions": "TRACKED",
+      "flags": "MODIFY",
       "owner": [
         {
           "element": "throwingEntity",
           "type": "FIELD"
-        },
-        {
-          "element": "func_70005_c_",
-          "type": "METHOD"
         }
       ],
       "range": 15
@@ -87,16 +59,12 @@
     {
       "class": "am2.entities.EntityThrownSickle",
       "type": "entity",
-      "entityType": "TRACKED",
-      "flag": "PVP",
+      "actions": "TRACKED",
+      "flags": "PVP",
       "owner": [
         {
           "element": "throwingEntity",
           "type": "FIELD"
-        },
-        {
-          "element": "func_70005_c_",
-          "type": "METHOD"
         }
       ],
       "range": 15
